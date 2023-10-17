@@ -1,0 +1,67 @@
+﻿Build started 2017/10/26 8:03:47 PM.
+     1>Project "\\Mac\Home\Downloads\PCPP\FA\POMS\POMS\POMS.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I\\Mac\Home\Downloads\PCPP\FA\POMS\POMS\SQLite3\include\sqlite3 /Zi /nologo /W3 /WX- /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\POMS.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt User.cpp
+         User.cpp
+     1>User.cpp(19): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(88): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(143): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(160): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(195): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(240): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(266): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>User.cpp(296): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"\\Mac\Home\Downloads\PCPP\FA\POMS\x64\Debug\POMS.exe" /INCREMENTAL /NOLOGO /LIBPATH:\\Mac\Home\Downloads\PCPP\FA\POMS\POMS\SQLite3\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"\\Mac\Home\Downloads\PCPP\FA\POMS\x64\Debug\POMS.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"\\Mac\Home\Downloads\PCPP\FA\POMS\x64\Debug\POMS.lib" /MACHINE:X64 x64\Debug\Admin.obj
+         x64\Debug\DailyItem.obj
+         x64\Debug\GenerateOrder.obj
+         x64\Debug\Item.obj
+         x64\Debug\POMS.obj
+         x64\Debug\PurchaseManager.obj
+         x64\Debug\PurchaseRequisition.obj
+         x64\Debug\SalesManager.obj
+         x64\Debug\stdafx.obj
+         x64\Debug\Supplier.obj
+         x64\Debug\User.obj
+     1>Supplier.obj : error LNK2001: unresolved external symbol sqlite3_close
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_close
+     1>DailyItem.obj : error LNK2019: unresolved external symbol sqlite3_close referenced in function "protected: void __cdecl Daily::AddDaily(void)" (?AddDaily@Daily@@IEAAXXZ)
+     1>GenerateOrder.obj : error LNK2001: unresolved external symbol sqlite3_close
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_close
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_close
+     1>Supplier.obj : error LNK2019: unresolved external symbol sqlite3_open referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::replace(class std::_String_const_iterator<class std::_String_val<struct std::_Simple_types<char> > >,class std::_String_const_iterator<class std::_String_val<struct std::_Simple_types<char> > >,class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >,class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >)" (?replace@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV12@V?$_String_const_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@2@0V?$_String_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@2@1@Z)
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_open
+     1>DailyItem.obj : error LNK2001: unresolved external symbol sqlite3_open
+     1>GenerateOrder.obj : error LNK2001: unresolved external symbol sqlite3_open
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_open
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_open
+     1>Supplier.obj : error LNK2019: unresolved external symbol sqlite3_prepare_v2 referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign<class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > > >(class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >,class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >)" (??$assign@V?$_String_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@V?$_String_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@1@0@Z)
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_prepare_v2
+     1>DailyItem.obj : error LNK2001: unresolved external symbol sqlite3_prepare_v2
+     1>GenerateOrder.obj : error LNK2001: unresolved external symbol sqlite3_prepare_v2
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_prepare_v2
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_prepare_v2
+     1>Supplier.obj : error LNK2019: unresolved external symbol sqlite3_step referenced in function "public: class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > & __cdecl std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >::assign<class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > > >(class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >,class std::_String_iterator<class std::_String_val<struct std::_Simple_types<char> > >)" (??$assign@V?$_String_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@std@@@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QEAAAEAV01@V?$_String_iterator@V?$_String_val@U?$_Simple_types@D@std@@@std@@@1@0@Z)
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_step
+     1>DailyItem.obj : error LNK2001: unresolved external symbol sqlite3_step
+     1>GenerateOrder.obj : error LNK2001: unresolved external symbol sqlite3_step
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_step
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_step
+     1>DailyItem.obj : error LNK2019: unresolved external symbol sqlite3_column_int referenced in function "protected: void __cdecl Daily::AddDaily(void)" (?AddDaily@Daily@@IEAAXXZ)
+     1>Supplier.obj : error LNK2019: unresolved external symbol sqlite3_finalize referenced in function "protected: void __cdecl Supplier::AddSupplier(void)" (?AddSupplier@Supplier@@IEAAXXZ)
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_finalize
+     1>DailyItem.obj : error LNK2001: unresolved external symbol sqlite3_finalize
+     1>GenerateOrder.obj : error LNK2001: unresolved external symbol sqlite3_finalize
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_finalize
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_finalize
+     1>User.obj : error LNK2001: unresolved external symbol sqlite3_column_text
+     1>GenerateOrder.obj : error LNK2019: unresolved external symbol sqlite3_column_text referenced in function "public: bool __cdecl Order::OrderCheck(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?OrderCheck@Order@@QEAA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
+     1>Item.obj : error LNK2001: unresolved external symbol sqlite3_column_text
+     1>PurchaseRequisition.obj : error LNK2001: unresolved external symbol sqlite3_column_text
+     1>Supplier.obj : error LNK2001: unresolved external symbol sqlite3_column_text
+     1>\\Mac\Home\Downloads\PCPP\FA\POMS\x64\Debug\POMS.exe : fatal error LNK1120: 7 unresolved externals
+     1>Done Building Project "\\Mac\Home\Downloads\PCPP\FA\POMS\POMS\POMS.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.49
